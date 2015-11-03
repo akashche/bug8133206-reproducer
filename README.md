@@ -11,9 +11,9 @@ by zlib.
 
 It runs `InflaterAllocWorker` under [memcheck](http://valgrind.org/docs/manual/mc-manual.html) (valgrind) three times:
 
-    - using `smallbuf` mode to cause a guaranteed `updatewindow` leak to check that leaks parsing from memcheck's output works correctly
-    - using `noinflate` mode to have a result without "updatewindow" leaks
-    - using `inflate` mode that will have `updatewindow` leaks on a jdk without [8133206 patch](http://cr.openjdk.java.net/~nikgor/8133206/jdk7u-dev/webrev.01/)
+ - using `smallbuf` mode to cause a guaranteed `updatewindow` leak to check that leaks parsing from memcheck's output works correctly
+ - using `noinflate` mode to have a result without "updatewindow" leaks
+ - using `inflate` mode that will have `updatewindow` leaks on a jdk without [8133206 patch](http://cr.openjdk.java.net/~nikgor/8133206/jdk7u-dev/webrev.01/)
 
 For test to success number of leaks from `noinflate` and `inflate` runs must be the same.
 
