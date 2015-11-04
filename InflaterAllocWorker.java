@@ -22,7 +22,7 @@ import java.util.zip.Inflater;
 
 /**
  * Main class, should be run under the memcheck (valgrind)
- * with "leak-check" and "leak-check" enabled.
+ * with "leak-check" and "show-reachable" enabled.
  *
  * Expected leaks have the following trace:
  * malloc <- updatewindow <- inflate <- Java_java_util_zip_Inflater_inflateBytes .
