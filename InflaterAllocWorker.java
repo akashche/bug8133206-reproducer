@@ -29,7 +29,7 @@ import java.util.zip.Inflater;
  *
  * zlib's debuginfo must be installed if JDK uses system zlib.
  *
- * @author akashche
+ * @author akashche@redhat.com
  */
 public class InflaterAllocWorker {
 
